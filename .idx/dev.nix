@@ -13,6 +13,11 @@
     # Search for the extensions you want on https://open-vsx.org/ and use "publisher.id"
     extensions = [
       # "vscodevim.vim"
+      "christian-kohler.path-intellisense"
+      "dsznajder.es7-react-js-snippets"
+      "esbenp.prettier-vscode"
+      "PKief.material-icon-theme"
+      "zhuangtongfa.material-theme"
     ];
     workspace = {
       # Runs when a workspace is first created with this `dev.nix` file
