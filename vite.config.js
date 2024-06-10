@@ -7,6 +7,8 @@ export default defineConfig({
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:4284803558.
+      "~": path.resolve(__dirname, "./"),
     },
   },
 })
