@@ -3,21 +3,21 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import { Routes, Route } from "react-router-dom"
 import NavBar from './components/NavBar.jsx'
+import HomePage from './Home/HomePage'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
     <div>
       <NavBar/>
-        {/* <Routes>
+        <Routes>
           <Route exact path="/" element={<HomePage />} />
-          <Route path="/players" element={<PlayersPage />} />
+          {/* <Route path="/players" element={<PlayersPage />} />
           <Route path="/games" element={<GamesPage />} />
-          <Route path="/stats" element={<StatsPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes> */}
+          <Route path="/stats" element={<StatsPage />} /> */}
+          {/* <Route path="*" element={<NotFound />} /> */}
+        </Routes>
     </div>
       
     </>

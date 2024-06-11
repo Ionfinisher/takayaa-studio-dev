@@ -46,7 +46,7 @@ export function SheetAction() {
         </div>
         <SheetFooter>
           <SheetClose asChild>
-            <Button size={"lg"} className="text-2xl">Close</Button>
+            <Button size={"lg"} variant={"outline"} className="text-lg">Close</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>
