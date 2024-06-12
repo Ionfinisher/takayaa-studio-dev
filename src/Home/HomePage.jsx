@@ -7,9 +7,9 @@ const HomePage = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="container mx-auto px-4 md:px-8 text-white bg-cover bg-center bg-[url('src/assets/images/nice-cube.jpeg')]">
+      <div className="container mx-auto px-4 md:px-8 text-black bg-cover bg-center bg-[url('src/assets/images/ttten.svg')]">
 
-        <div className="flex flex-col gap-8 items-center justify-center w-full h-[500px]">
+        <div className="flex flex-col gap-8 items-center justify-center w-full h-[600px]">
           <div className="flex flex-col m-3 gap-1">
             <div className="text-xl md:text-4xl text-center font-extrabold">
               <div className='mb-2'>TAKAYAA STUDIO :</div>
@@ -18,12 +18,12 @@ const HomePage = () => {
             </div>
             
             <div className="text-sm md:text-lg text-center my-3">
-              <div>Here to help you bring your ideas further</div>
+              <div className=" font">Here to help you bring your ideas further</div>
               <div>with our creative digital services.</div>
             </div>
           </div> 
           <div className="md:my-2">
-            <Link to={"/"} className='border border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out text-xl font-bold text-white py-4 px-10 rounded-full flex gap-2 items-center'>
+            <Link to={"/"} className='border border-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-xl font-bold text-black py-4 px-10 rounded-full flex gap-2 items-center'>
               {`LET'S TALK`}
             </Link>
           </div> 

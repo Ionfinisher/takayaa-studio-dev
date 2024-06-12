@@ -1,15 +1,16 @@
 import React from "react"
 import { Link, useMatch, useResolvedPath } from "react-router-dom"
 import logo from "../assets/react.svg"
+import takayaa from "../assets/takayaa-logo.png"
 import { SheetAction } from "./BurgerMenu";
 import { Separator } from "~/components/ui/separator"
 
 export default function NavBar() {
     return (      
     <div className="container mx-auto px-4 md:px-8 sticky top-0 z-40 w-full backdrop-blur-sm">
-        <div className="flex items-center justify-between h-24">
+        <div className="flex items-center justify-between h-20">
             <Link to={"/"}>
-                <img src={logo}  alt="logo" className="w-25 h-25" />
+                <img src={takayaa}  alt="logo" className="w-40 h-30"/>
             </Link>
             <div className="md:hidden">
                 <SheetAction/>
