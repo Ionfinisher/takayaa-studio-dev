@@ -10,7 +10,9 @@ import {
   SheetTrigger,
 } from "~/components/ui/sheet"
 import { AlignJustify } from "lucide-react"
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
+import { useMatch, useResolvedPath } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
+import takayaa from "../assets/takayaa-logo.png"
 
 
 
@@ -26,27 +28,32 @@ export function SheetAction() {
       <SheetContent className="flex flex-col justify-between">
         <SheetHeader>
           <SheetTitle className="mt-5 flex flex-row justify-between">
-            Menu
+            <Link to={"/"}>
+                <img src={takayaa}  alt="logo" className="w-40 h-30"/>
+            </Link>
           </SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col gap-4 items-center">
+        <div className="flex flex-col gap-8 items-center amalfi-coast">
             <SheetClose asChild>
-              <CustomLink  to={"/"}>Home</CustomLink>
+              <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
             </SheetClose>
             <SheetClose asChild>
-              <CustomLink  to={"/"}>Projects</CustomLink>
+              <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
             </SheetClose>
             <SheetClose asChild>
-              <CustomLink  to={"/"}>Freelance</CustomLink>
+              <CustomLink to={"/#ourworks"} className='hover:text-[#0E3B5F]'>Our works</CustomLink>
             </SheetClose>
             <SheetClose asChild>
-              <CustomLink  to={"/"}>Contact</CustomLink>
+              <CustomLink to={"/#services"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
             </SheetClose>
-            {/* <Link to={"/"}>Blog</Link> */}
+            <SheetClose asChild>
+              <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
+            </SheetClose>
+            
         </div>
         <SheetFooter>
           <SheetClose asChild>
-            <Button size={"lg"} variant={"outline"} className="text-lg">Close</Button>
+            <Button size={"lg"} variant={"outline"} className="text-lg montserrat-md">Close</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>

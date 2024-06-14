@@ -1,6 +1,6 @@
 import React from "react"
-import { Link, useMatch, useResolvedPath } from "react-router-dom"
-import logo from "../assets/react.svg"
+import { useMatch, useResolvedPath } from "react-router-dom"
+import { HashLink as Link } from 'react-router-hash-link';
 import takayaa from "../assets/takayaa-logo.png"
 import { SheetAction } from "./BurgerMenu";
 import { Separator } from "~/components/ui/separator"
@@ -17,10 +17,10 @@ export default function NavBar() {
             </div>
             <div className="md:flex items-center space-x-6 hidden amalfi-coast">
                 <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
-                <CustomLink to={"/1"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
-                <CustomLink to={"/2"} className='hover:text-[#0E3B5F]'>Portfolio</CustomLink>
-                <CustomLink to={"/3"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
-                <CustomLink to={"/4"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
+                <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
+                <CustomLink to={"/#ourworks"} className='hover:text-[#0E3B5F]'>Our works</CustomLink>
+                <CustomLink to={"/#services"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
+                <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
             </div>
         </div>
         <Separator className="bg-black"/>

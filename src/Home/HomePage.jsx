@@ -35,7 +35,7 @@ const HomePage = () => {
 
 
       {/* About us section */}
-      <div className="container mx-auto px-4 md:px-8 my-24">
+      <div id='aboutus' className="container mx-auto px-4 md:px-8 my-24">
         <div className="border border-black montserrat-md text-black py-2 px-5 rounded-full w-36 flex gap-2 items-center justify-center mb-16">
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
           About us
@@ -53,7 +53,7 @@ const HomePage = () => {
       {/* About us section */}
 
       {/* Portfolio section */}
-      <div className="w-full px-4 md:px-8 mb-24 text-[#e4e2e3] bg-[#484647bb] flex flex-col justify-center items-center gap-4">
+      <div id='ourworks' className="w-full px-4 md:px-8 mb-24 text-[#e4e2e3] bg-[#484647bb] flex flex-col justify-center items-center gap-4">
         <div className='border border-white montserrat-md text-white py-2 px-5 rounded-full w-36 flex gap-2 items-center justify-center mb-12 mt-24'>
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
           Our work
@@ -107,46 +107,44 @@ const HomePage = () => {
       {/* Portfolio section */}
 
       {/* Services section */}
-      <div className="container mx-auto px-4 md:px-8 mb-24">
+      <div id="services" className="container mx-auto px-4 md:px-8 mb-24">
         <div className="border border-black montserrat-md text-black py-2 px-5 rounded-full max-w-44 flex gap-2 items-center justify-center mb-12">
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
           Our services
         </div>
         <div className="flex pb-12">
-          <div className="basis-1/2 flex flex-col justify-center items-start gap-5">
+          <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
             <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">01.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Digital Marketing</p>
+              <p className="montserrat-md text-xs md:text-base text-gray-600">01.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Digital Marketing</p>
             </div>
             <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">02.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Branding</p>
+              <p className="montserrat-md text-xs md:text-base text-gray-600">02.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Branding</p>
             </div>
             <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">03.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Content Strategy</p>
-            </div>
-            
-          </div>
-
-          <div className="basis-1/2 flex flex-col justify-center items-start gap-5">
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">01.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Webdesign</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">02.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Webdesign</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs text-gray-600">03.</p>
-              <p className='montserrat-md text-2xl md:text-5xl'>Webdesign</p>
+              <p className="montserrat-md text-xs md:text-base text-gray-600">03.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Content Strategy</p>
             </div>
             
           </div>
 
+          <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
+            <div className="flex justify-center items-center gap-4">
+              <p className="montserrat-md text-xs md:text-base text-gray-600">04.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Digital Marketing</p>
+            </div>
+            <div className="flex justify-center items-center gap-4">
+              <p className="montserrat-md text-xs md:text-base text-gray-600">05.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Branding</p>
+            </div>
+            <div className="flex justify-center items-center gap-4">
+              <p className="montserrat-md text-xs md:text-base text-gray-600">06.</p>
+              <p className='montserrat-md text-xl md:text-5xl'>Content Strategy</p>
+            </div>
+
+          </div>
         </div>
-
       </div>
       
       {/* Services section */}
