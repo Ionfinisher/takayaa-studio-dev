@@ -4,6 +4,7 @@ import viteLogo from '/vite.svg'
 import { Routes, Route } from "react-router-dom"
 import NavBar from './components/NavBar.jsx'
 import HomePage from './Home/HomePage'
+import NotFound from './NotFound/NotFound'
 
 function App() {
 
@@ -16,7 +17,7 @@ function App() {
           {/* <Route path="/players" element={<PlayersPage />} />
           <Route path="/games" element={<GamesPage />} />
           <Route path="/stats" element={<StatsPage />} /> */}
-          {/* <Route path="*" element={<NotFound />} /> */}
+          <Route path="*" element={<NotFound />} />
         </Routes>
     </div>
       
