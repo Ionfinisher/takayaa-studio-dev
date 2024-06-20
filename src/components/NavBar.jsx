@@ -7,7 +7,7 @@ import { Separator } from "~/components/ui/separator"
 
 export default function NavBar() {
     return (
-    <div className="container mx-auto px-4 md:px-8 sticky top-0 z-40 w-full bg-[#f1f1f1]">
+    <div className="container mx-auto px-4 md:px-8 sticky top-0 z-40 w-full bg-[#f1f1f1] shadow-md">
         <div className="flex items-center justify-between h-20">
             <Link to={"/"}>
                 <img src={takayaa}  alt="logo" className="w-40 h-30"/>
@@ -15,7 +15,7 @@ export default function NavBar() {
             <div className="md:hidden">
                 <SheetAction/>
             </div>
-            <div className="md:flex items-center space-x-6 hidden amalfi-coast">
+            <div className="md:flex items-center space-x-6 hidden montserrat-md text-lg">
                 <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
                 <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
                 <CustomLink to={"/#ourworks"} className='hover:text-[#0E3B5F]'>Our works</CustomLink>
@@ -23,7 +23,6 @@ export default function NavBar() {
                 <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
             </div>
         </div>
-        <Separator className="bg-black"/>
     </div>
     )
 };

@@ -33,7 +33,7 @@ export function SheetAction() {
             </Link>
           </SheetTitle>
         </SheetHeader>
-        <div className="flex flex-col gap-8 items-center amalfi-coast">
+        <div className="flex flex-col gap-8 items-center montserrat-md">
             <SheetClose asChild>
               <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
             </SheetClose>

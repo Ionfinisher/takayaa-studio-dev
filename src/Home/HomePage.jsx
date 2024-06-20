@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="container mx-auto px-4 md:px-8 text-black bg-cover bg-center bg-[url('src/assets/images/ttten.svg')]">
+      <div className="container mx-auto px-4 md:px-8 text-black bg-cover bg-center bg-[url('src/assets/images/TAKAYAA-BACKGROUND.png')]">
 
         <div className="flex flex-col gap-8 items-center justify-center w-full h-[600px]">
           <div className="flex flex-col m-3 gap-1 montserrat-md">
@@ -54,9 +54,9 @@ const HomePage = () => {
 
       {/* Portfolio section */}
       <div id='ourworks' className="w-full px-4 md:px-8 mb-24 text-[#e4e2e3] bg-[#484647bb] flex flex-col justify-center items-center gap-4">
-        <div className='border border-white montserrat-md text-white py-2 px-5 rounded-full w-36 flex gap-2 items-center justify-center mb-12 mt-24'>
+        <div className='border border-white montserrat-md text-white py-2 px-5 rounded-full min-w-36 flex gap-2 items-center justify-center mb-12 mt-24'>
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
-          Our work
+          Our Expertise
         </div>
         
         <div className="flex flex-col gap-8 items-center justify-center text-center text-lg md:text-2xl">
