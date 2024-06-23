@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { CircleArrowOutDownRight } from 'lucide-react';
-import { Separator } from "~/components/ui/separator"
 import takayaa from "../assets/takayaa-logo.png"
-import divider from "../assets/images/divider.png"
+
+const images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png']
 
 const HomePage = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="container mx-auto px-4 md:px-8 text-black bg-cover bg-center bg-[url('src/assets/images/TAKAYAA-BACKGROUND.png')]">
+      <div className="w-full px-4 md:px-8 py-12 text-black bg-cover bg-center bg-[url('src/assets/images/TAKAYAA-BACKGROUND.webp')]">
 
-        <div className="flex flex-col gap-8 items-center justify-center w-full h-[600px]">
+        <div className="flex flex-col items-center justify-center w-full">
           <div className="flex flex-col m-3 gap-1 montserrat-md">
             <div className="text-2xl md:text-4xl text-center">
               <img src={takayaa}  alt="logo" className="mx-auto w-64 h-24 md:w-full md:h-40"/>
@@ -35,7 +35,7 @@ const HomePage = () => {
 
 
       {/* About us section */}
-      <div id='aboutus' className="container mx-auto px-4 md:px-8 my-24">
+      <div id='aboutus' className="container mx-auto px-4 md:px-8 py-24">
         <div className="border border-black montserrat-md text-black py-2 px-5 rounded-full w-36 flex gap-2 items-center justify-center mb-16">
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
           About us
@@ -52,102 +52,89 @@ const HomePage = () => {
       </div>
       {/* About us section */}
 
-      {/* Portfolio section */}
-      <div id='ourworks' className="w-full px-4 md:px-8 mb-24 text-[#e4e2e3] bg-[#484647bb] flex flex-col justify-center items-center gap-4">
-        <div className='border border-white montserrat-md text-white py-2 px-5 rounded-full min-w-36 flex gap-2 items-center justify-center mb-12 mt-24'>
-          <CircleArrowOutDownRight size={13} strokeWidth={2} />
-          Our Expertise
-        </div>
-        
-        <div className="flex flex-col gap-8 items-center justify-center text-center text-lg md:text-2xl">
-          <div className="amalfi-coast">
-            Project Name
-          </div>
-          <div>
-            <img src="src/assets/images/project.jpeg" alt="Project" className="w-full aspect-video md:w-[55%] md:aspect-video mx-auto"/>
-          </div>
-          <div className="px-9 md:px-72">
-            Mondodo is architectureal Daseo
-            creative studio. Harnessing innovation and
-            recision. we architectural
-            masterpieces that elevate the human
-            exnerience. The best adenev in 2022's
-            digital world.
-          </div>
-          <img src={divider} alt="divider" className='h-9 mb-14' />
-        </div>
 
-        <div className="flex flex-col gap-8 items-center justify-center text-center text-lg md:text-2xl">
-          <div className="amalfi-coast">
-            Project Name
-          </div>
-          <div>
-            <img src="src/assets/images/project.jpeg" alt="Project" className="w-full aspect-video md:w-[55%] md:aspect-video mx-auto"/>
-          </div>
-          <div className="px-9 md:px-72">
-            Mondodo is architectureal Daseo
-            creative studio. Harnessing innovation and
-            recision. we architectural
-            masterpieces that elevate the human
-            exnerience. The best adenev in 2022's
-            digital world.
-          </div>
-          <img src={divider} alt="divider" className='h-9 mb-14' />
-        </div>
-        
-
-
-
-        
-        
-
-        
-      </div>
-      
-      {/* Portfolio section */}
 
       {/* Services section */}
-      <div id="services" className="container mx-auto px-4 md:px-8 mb-24">
-        <div className="border border-black montserrat-md text-black py-2 px-5 rounded-full max-w-44 flex gap-2 items-center justify-center mb-12">
-          <CircleArrowOutDownRight size={13} strokeWidth={2} />
-          Our services
-        </div>
-        <div className="flex pb-12">
-          <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">01.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Digital Marketing</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">02.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Branding</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">03.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Content Strategy</p>
-            </div>
-            
+      <div className='w-full py-24 bg-[#484647bb]'>
+        <div id="services" className="container mx-auto px-4 md:px-8">
+          <div className="border border-white montserrat-md text-white py-2 px-5 rounded-full max-w-44 flex gap-2 items-center justify-center mb-16">
+            <CircleArrowOutDownRight size={13} strokeWidth={2} />
+            Our expertise
           </div>
+          <div className="flex my-5 text-white">
+            <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">01.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Digital Marketing</p>
+              </div>
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">02.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Branding</p>
+              </div>
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">03.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Content Strategy</p>
+              </div>
+              
+            </div>
 
-          <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">04.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Digital Marketing</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">05.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Branding</p>
-            </div>
-            <div className="flex justify-center items-center gap-4">
-              <p className="montserrat-md text-xs md:text-base text-gray-600">06.</p>
-              <p className='montserrat-md text-xl md:text-5xl'>Content Strategy</p>
-            </div>
+            <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">04.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Digital Marketing</p>
+              </div>
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">05.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Branding</p>
+              </div>
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">06.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Content Strategy</p>
+              </div>
 
+            </div>
           </div>
         </div>
       </div>
       
+      
       {/* Services section */}
+
+      {/* They trust us section */}
+      <div className="container mx-auto px-4 md:px-8 py-24">
+        <div className="flex flex-col items-center justify-center gap-8">
+        <div className="border border-black montserrat-md text-black py-2 px-5 rounded-full max-w-48 flex gap-2 items-center justify-center mb-16">
+          <CircleArrowOutDownRight size={13} strokeWidth={2} />
+            They trusted us
+          </div>
+          <div className="flex flex-row justify-evenly w-full flex-wrap gap-3">
+            {images.map((image, index) => (
+              <div key={index} className="w-28 h-28 md:w-52 md:h-48">
+                <img src={`src/assets/trusted-logos/${image}`} alt="Parteners-logo" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+      {/* They trust us section */}
+
+      {/* Download resources section */}
+
+      {/* Download resources section */}
+
+      {/* Contact section */}
+      {/* Contact section */}
+
+      {/* Our social media section */}
+      {/* Our social media section */}
+
+      {/* Footer section */}
+      {/* Footer section */}
+
+      {/* Testimonials section */}
+      {/* Testimonials section */}
+
+
 
     </>
   );

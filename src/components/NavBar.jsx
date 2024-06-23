@@ -7,8 +7,8 @@ import { Separator } from "~/components/ui/separator"
 
 export default function NavBar() {
     return (
-    <div className="container mx-auto px-4 md:px-8 sticky top-0 z-40 w-full bg-[#f1f1f1] shadow-md">
-        <div className="flex items-center justify-between h-20">
+    <div className="w-full px-4 md:px-8 sticky top-0 z-40 bg-[#f1f1f1] shadow-md">
+        <div className="container mx-auto flex items-center justify-between h-20">
             <Link to={"/"}>
                 <img src={takayaa}  alt="logo" className="w-40 h-30"/>
             </Link>
