@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { CircleArrowOutDownRight } from 'lucide-react';
+import { CircleArrowOutDownRight, Download } from 'lucide-react';
 import takayaa from "../assets/takayaa-logo.png"
 
 const images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png']
@@ -54,9 +54,9 @@ const HomePage = () => {
 
 
 
-      {/* Services section */}
+      {/* Expertise section */}
       <div className='w-full py-24 bg-[#484647bb]'>
-        <div id="services" className="container mx-auto px-4 md:px-8">
+        <div id="ourexpertise" className="container mx-auto px-4 md:px-8">
           <div className="border border-white montserrat-md text-white py-2 px-5 rounded-full max-w-44 flex gap-2 items-center justify-center mb-16">
             <CircleArrowOutDownRight size={13} strokeWidth={2} />
             Our expertise
@@ -98,7 +98,7 @@ const HomePage = () => {
       </div>
       
       
-      {/* Services section */}
+      {/* Expertise section */}
 
       {/* They trust us section */}
       <div className="container mx-auto px-4 md:px-8 py-24">
@@ -118,8 +118,21 @@ const HomePage = () => {
       </div>
       {/* They trust us section */}
 
-      {/* Download resources section */}
+      {/* Testimonials section */}
+      {/* Testimonials section */}
 
+      {/* Download resources section */}
+      <div id="freeressources" className="w-full py-24 bg-[#484647bb]">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col gap-12 items-center justify-evenly">
+            <h1 className="text-white montserrat-md text-3xl md:text-5xl text-center">Download our free ressource now !</h1>
+            <Link to={"/"} className='border border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-white py-4 px-10 rounded-full flex gap-2 items-center'>
+              <Download size={20} strokeWidth={2} />
+              Download
+            </Link>
+          </div>
+        </div>
+      </div>
       {/* Download resources section */}
 
       {/* Contact section */}
@@ -130,11 +143,6 @@ const HomePage = () => {
 
       {/* Footer section */}
       {/* Footer section */}
-
-      {/* Testimonials section */}
-      {/* Testimonials section */}
-
-
 
     </>
   );

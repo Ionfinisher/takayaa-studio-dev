@@ -18,7 +18,7 @@ export default function NavBar() {
             <div className="md:flex items-center space-x-6 hidden montserrat-md text-lg">
                 <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
                 <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
-                <CustomLink to={"/#ourworks"} className='hover:text-[#0E3B5F]'>Our works</CustomLink>
+                <CustomLink to={"/#ourexpertise"} className='hover:text-[#0E3B5F]'>Our expertise</CustomLink>
                 <CustomLink to={"/#services"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
                 <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
             </div>
