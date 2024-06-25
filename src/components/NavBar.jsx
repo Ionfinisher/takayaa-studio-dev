@@ -16,11 +16,11 @@ export default function NavBar() {
                 <SheetAction/>
             </div>
             <div className="md:flex items-center space-x-6 hidden montserrat-md text-lg">
-                <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
-                <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
-                <CustomLink to={"/#ourexpertise"} className='hover:text-[#0E3B5F]'>Our expertise</CustomLink>
-                <CustomLink to={"/#services"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
-                <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
+                <CustomLink to={"/#home"} className='hover:underline underline-offset-4'>Home</CustomLink>
+                <CustomLink to={"/#aboutus"} className='hover:underline underline-offset-4'>About us</CustomLink>
+                <CustomLink to={"/#ourexpertise"} className='hover:underline underline-offset-4'>Our expertise</CustomLink>
+                <CustomLink to={"/#freeresources"} className='hover:underline underline-offset-4'>Free resource</CustomLink>
+                <CustomLink to={"/#contact"} className='hover:underline underline-offset-4'>Contact</CustomLink>
             </div>
         </div>
     </div>
@@ -31,7 +31,7 @@ function CustomLink({ to, children, ...props }) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     return (
-        <div className={isActive ? "underline underline-offset-4" : ""}>
+        <div>
             <Link to={to} {...props}>
                 {children}
             </Link>

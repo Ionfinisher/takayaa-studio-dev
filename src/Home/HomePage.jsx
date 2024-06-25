@@ -9,7 +9,7 @@ const HomePage = () => {
   return (
     <>
       {/* Hero section */}
-      <div className="w-full px-4 md:px-8 py-12 text-black bg-cover bg-center bg-[url('src/assets/images/TAKAYAA-BACKGROUND.webp')]">
+      <div id="home" className="w-full px-4 md:px-8 py-12 text-black bg-cover bg-center bg-[url('src/assets/images/TAKAYAA-BACKGROUND.webp')]">
 
         <div className="flex flex-col items-center justify-center w-full">
           <div className="flex flex-col m-3 gap-1 montserrat-md">
@@ -20,12 +20,12 @@ const HomePage = () => {
             </div>
             
             <div className="text-sm md:text-lg text-center my-3">
-              <div>Here to help you bring your ideas further</div>
-              <div>with our creative digital services.</div>
+              <div>Find out more about how we can help you</div>
+              <div>make a difference.</div>
             </div>
           </div> 
           <div className="md:my-2">
-            <Link to={"/"} className='border border-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-black py-4 px-10 rounded-full flex gap-2 items-center'>
+            <Link to={"https://forms.gle/QwjYdgynRiwuLf3r5"} className='border border-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-black py-4 px-10 rounded-full flex gap-2 items-center'>
               {`LET'S TALK`}
             </Link>
           </div> 
@@ -40,14 +40,14 @@ const HomePage = () => {
           <CircleArrowOutDownRight size={13} strokeWidth={2} />
           About us
         </div>
-        <div className="montserrat-md text-3xl md:text-7xl my-5">
-          <div>We Integrate, Collaborate</div>
-          <div>and Challenge.</div>
-          <div>We are digital natives</div>
-          <div>embracing the creative</div>
-          <div>freedom to produce</div>
-          <div>solutions that connect,</div>
-          <div>communicate, and inspire.</div>
+        <div className="montserrat-md text-2xl md:text-6xl my-5">
+          <div>Our mission is to propel the online visibility</div>
+          <div>and engagement of women's brands and Civil Society Organizations in Africa.</div>
+          <div>Our vision is to create a digital ecosystem</div>
+          <div>where every voice can be heard</div>
+          <div>and every project can thrive through innovative marketing and design solutions.</div>
+          <div></div>
+          <div></div>
         </div>
       </div>
       {/* About us section */}
@@ -55,43 +55,47 @@ const HomePage = () => {
 
 
       {/* Expertise section */}
-      <div className='w-full py-24 bg-[#484647bb]'>
-        <div id="ourexpertise" className="container mx-auto px-4 md:px-8">
+      <div id="ourexpertise" className='w-full py-24 bg-[#484647bb]'>
+        <div className="container mx-auto px-4 md:px-8">
           <div className="border border-white montserrat-md text-white py-2 px-5 rounded-full max-w-44 flex gap-2 items-center justify-center mb-16">
             <CircleArrowOutDownRight size={13} strokeWidth={2} />
             Our expertise
           </div>
+
           <div className="flex my-5 text-white">
-            <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
+            <div className="basis-1/2 flex flex-col justify-start md:justify-center items-start gap-8 md:gap-12">
               <div className="flex justify-center items-center gap-4">
                 <p className="montserrat-md text-xs md:text-base text-gray-200">01.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Digital Marketing</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Graphic Design</p>
               </div>
               <div className="flex justify-center items-center gap-4">
                 <p className="montserrat-md text-xs md:text-base text-gray-200">02.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Branding</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Web Design</p>
               </div>
               <div className="flex justify-center items-center gap-4">
                 <p className="montserrat-md text-xs md:text-base text-gray-200">03.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Content Strategy</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Audit & Digital Strategy</p>
+              </div>
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">04.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Training</p>
               </div>
               
             </div>
 
-            <div className="basis-1/2 flex flex-col justify-center items-start gap-8 md:gap-12">
-              <div className="flex justify-center items-center gap-4">
-                <p className="montserrat-md text-xs md:text-base text-gray-200">04.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Digital Marketing</p>
-              </div>
+            <div className="basis-1/2 flex flex-col justify-start md:justify-center items-start gap-8 md:gap-12">
               <div className="flex justify-center items-center gap-4">
                 <p className="montserrat-md text-xs md:text-base text-gray-200">05.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Branding</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Content Marketing</p>
               </div>
               <div className="flex justify-center items-center gap-4">
                 <p className="montserrat-md text-xs md:text-base text-gray-200">06.</p>
-                <p className='montserrat-md text-xl md:text-4xl'>Content Strategy</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Content Creation</p>
               </div>
-
+              <div className="flex justify-center items-center gap-4">
+                <p className="montserrat-md text-xs md:text-base text-gray-200">07.</p>
+                <p className='montserrat-md text-xl md:text-4xl'>Graphic Models Sale</p>
+              </div>
             </div>
           </div>
         </div>
@@ -122,13 +126,13 @@ const HomePage = () => {
       {/* Testimonials section */}
 
       {/* Download resources section */}
-      <div id="freeressources" className="w-full py-24 bg-[#484647bb]">
+      <div id="freeresources" className="w-full py-24 bg-[#484647bb]">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col gap-12 items-center justify-evenly">
-            <h1 className="text-white montserrat-md text-3xl md:text-5xl text-center">Download our free ressource now !</h1>
-            <Link to={"/"} className='border border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-white py-4 px-10 rounded-full flex gap-2 items-center'>
+            <h1 className="text-white montserrat-md text-3xl md:text-5xl text-center">You're getting a free copy of our resource on something</h1>
+            <Link to={"/"} className='border border-white hover:bg-white hover:text-black transition-all duration-300 ease-in-out text-xl md:text-2xl montserrat-2xl text-white py-4 px-10 rounded-full flex gap-2 items-center'>
               <Download size={20} strokeWidth={2} />
-              Download
+              Get free resource
             </Link>
           </div>
         </div>
@@ -136,6 +140,18 @@ const HomePage = () => {
       {/* Download resources section */}
 
       {/* Contact section */}
+      <div id="contact" className="w-full py-24">
+        <div className="container mx-auto px-4 md:px-8">
+          <div className="flex flex-col md:flex-row gap-12 items-center justify-evenly md:justify-center">
+            <h1 className="text-black montserrat-md text-3xl md:text-5xl text-center">
+              Find out how we can turn your ideas into tangible, sustainable realities. Contact us today!
+            </h1>
+            <Link to={"https://forms.gle/QwjYdgynRiwuLf3r5"} className='border border-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-black py-4 px-10 rounded-full flex gap-2 items-center'>
+                {`LET'S TALK`}
+            </Link>
+          </div>
+        </div>
+      </div>
       {/* Contact section */}
 
       {/* Our social media section */}

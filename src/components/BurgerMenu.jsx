@@ -35,7 +35,7 @@ export function SheetAction() {
         </SheetHeader>
         <div className="flex flex-col gap-8 items-center montserrat-md">
             <SheetClose asChild>
-              <CustomLink to={"/"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
+              <CustomLink to={"/#home"} className='hover:text-[#0E3B5F]'>Home</CustomLink>
             </SheetClose>
             <SheetClose asChild>
               <CustomLink to={"/#aboutus"} className='hover:text-[#0E3B5F]'>About us</CustomLink>
@@ -44,7 +44,7 @@ export function SheetAction() {
               <CustomLink to={"/#ourexpertise"} className='hover:text-[#0E3B5F]'>Our expertise</CustomLink>
             </SheetClose>
             <SheetClose asChild>
-              <CustomLink to={"/#services"} className='hover:text-[#0E3B5F]'>Services</CustomLink>
+              <CustomLink to={"/#freeresources"} className='hover:text-[#0E3B5F]'>Free resource</CustomLink>
             </SheetClose>
             <SheetClose asChild>
               <CustomLink to={"/#contact"} className='hover:text-[#0E3B5F]'>Contact</CustomLink>
@@ -66,7 +66,7 @@ function CustomLink({ to, children, ...props }) {
     const resolvedPath = useResolvedPath(to)
     const isActive = useMatch({ path: resolvedPath.pathname, end: true })
     return (
-        <div className={isActive ? "underline underline-offset-4" : ""}>
+        <div>
             <Link to={to} {...props}>
                 {children}
             </Link>
