@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { CircleArrowOutDownRight, Download, PartyPopper, Instagram } from 'lucide-react';
 import takayaa from "../assets/takayaa-logo.png";
 import { InputForm as EmailForm } from '../components/InputForm';
+import Footer  from '../components/Footer.jsx';
 import { Separator } from "~/components/ui/separator"
 
 const images = ['1.png', '2.png', '3.png', '4.png', '5.png', '6.png', '7.png', '8.png', '9.png', '10.png', '11.png', '12.png', '13.png', '14.png', '15.png', '16.png', '17.png', '18.png', '19.png', '20.png', '21.png', '22.png', '23.png']
@@ -161,7 +162,7 @@ const HomePage = () => {
       {/* Contact section */}
 
       {/* Our social media section and footer*/}
-      <div id="footer" className="w-full bg-cover bg-center pt-24 pb-10 bg-[url('src/assets/images/TAKAYAA-BACKGROUND.webp')] uppercase montserrat-sm">
+      <div id="footer" className="w-full bg-cover bg-center pt-24 pb-10 bg-[url('src/assets/images/TAKAYAA-BACKGROUND.webp')] montserrat-sm">
         <div>
           <div className="container mx-auto px-4 md:px-8">
             {/* our social section */}
@@ -170,9 +171,9 @@ const HomePage = () => {
               <Link to={"https://www.instagram.com/takayaastudio?igsh=MTFvd3ViZm1tNXM3Ng=="} target='_blank' className='md:basis-1/3 backdrop-blur-sm shadow-lg rounded-xl p-8'>
                 <div className="flex flex-col justify-center items-center gap-5 montserrat-md">
                   {/* Calling instagram logo */}
-                  <span class="relative flex h-20 w-20">
-                    <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                    <span class="relative inline-flex rounded-full h-20 w-20 bg-pink-600 justify-center items-center">
+                  <span className="relative flex h-20 w-20">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-20 w-20 bg-pink-600 justify-center items-center">
                       <Instagram size={30} strokeWidth={2} className='text-white'/>
                     </span>
                   </span>
@@ -191,43 +192,7 @@ const HomePage = () => {
             <Separator className="my-8 bg-gray-300"/>
 
             {/* footer section */}
-            <div className="flex flex-col md:flex-row items-center md:items-start gap-10 justify-between">
-              {/* logo part */}
-              <div>
-                <img src={takayaa}  alt="logo" className="mx-auto w-32 h-12"/>
-              </div>
-              {/* logo part */}
-
-              {/* contacts section */}
-              <div>
-                <div className="flex flex-col gap-5 items-center md:items-start">
-                  <p>+228 90 00 00 00</p>
-                  <p>takayaastudio@gmail.com</p>
-                </div>
-              </div>
-              {/* contacts section */}
-
-              {/* footer links */}
-              <div>
-                <div className="flex flex-col gap-5 items-center md:items-start">
-                <Link to={"/#home"} className='hover:underline underline-offset-4'>Home</Link>
-                <Link to={"/#aboutus"} className='hover:underline underline-offset-4'>About us</Link>
-                <Link to={"/#ourexpertise"} className='hover:underline underline-offset-4'>Our expertise</Link>
-                <Link to={"/#freeresources"} className='hover:underline underline-offset-4'>Free resource</Link>
-                <Link to={"/#contact"} className='hover:underline underline-offset-4'>Contact</Link>
-                </div>
-              </div>
-              {/* footer links */}
-            </div>
-
-            <Separator className="mt-4 md:mt-28 mb-4 bg-gray-300"/>
-
-              {/* copyright section */}
-              <div className='flex justify-center text-center'>
-                <p>© {new Date().getFullYear()} Takayaa Studio. Tout droits réservés.</p>
-              </div>
-              {/* copyright section */}
-
+            <Footer/>
             {/* footer section */}
           </div>
           {/* end of footer and socials */}
