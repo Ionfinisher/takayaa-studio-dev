@@ -53,7 +53,7 @@ export function SheetAction() {
         </div>
         <SheetFooter>
           <SheetClose asChild>
-            <Button size={"lg"} variant={"outline"} className="text-lg montserrat-md">Close</Button>
+            <Button size={"lg"} variant={"outline"} className="text-lg montserrat-md mx-auto">Close</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>

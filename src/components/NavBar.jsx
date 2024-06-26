@@ -12,10 +12,10 @@ export default function NavBar() {
             <Link to={"/"}>
                 <img src={takayaa}  alt="logo" className="w-40 h-30"/>
             </Link>
-            <div className="md:hidden">
+            <div className="lg:hidden">
                 <SheetAction/>
             </div>
-            <div className="md:flex items-center space-x-6 hidden montserrat-md text-lg">
+            <div className="lg:flex items-center space-x-6 hidden montserrat-md text-lg">
                 <CustomLink to={"/#home"} className='hover:underline underline-offset-4'>Home</CustomLink>
                 <CustomLink to={"/#aboutus"} className='hover:underline underline-offset-4'>About us</CustomLink>
                 <CustomLink to={"/#ourexpertise"} className='hover:underline underline-offset-4'>Our expertise</CustomLink>
