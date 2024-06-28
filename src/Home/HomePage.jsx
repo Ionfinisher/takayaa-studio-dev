@@ -129,7 +129,7 @@ const HomePage = () => {
       {/* Testimonials section */}
 
       {/* Download resources section */}
-      <div id="freeresources" className="w-full py-24 bg-[#484647bb]">
+      {/* <div id="freeresources" className="w-full py-24 bg-[#484647bb]">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row gap-12 items-center justify-evenly">
             <h1 className="text-white montserrat-md text-3xl lg:text-4xl text-center md:basis-2/3">You're getting a free copy of our resource on something</h1>
@@ -143,17 +143,17 @@ const HomePage = () => {
             
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Download resources section */}
 
       {/* Contact section */}
-      <div id="contact" className="w-full py-24">
+      <div id="contact" className="w-full py-24 bg-[#484647bb]">
         <div className="container mx-auto px-4 md:px-8">
           <div className="flex flex-col gap-12 items-center justify-evenly md:justify-center">
-            <h1 className="text-black montserrat-md text-3xl lg:text-4xl text-center">
+            <h1 className="text-white montserrat-md text-3xl lg:text-4xl text-center">
               Find out how we can turn your ideas into tangible, sustainable realities. Contact us today!
             </h1>
-            <Link to={"https://forms.gle/QwjYdgynRiwuLf3r5"} target='_blank' className='border border-black hover:bg-black hover:text-white transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-black py-4 px-10 rounded-full flex gap-2 items-center'>
+            <Link to={"https://forms.gle/QwjYdgynRiwuLf3r5"} target='_blank' className='border border-white hover:bg-white hover:text-white transition-all duration-300 ease-in-out text-2xl montserrat-2xl text-white py-4 px-10 rounded-full flex gap-2 items-center'>
                 {`LET'S TALK`}
             </Link>
           </div>
